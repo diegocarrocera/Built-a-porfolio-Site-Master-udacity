@@ -1,0 +1,290 @@
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	background: linear-gradient(to bottom, #ff0066 0%, #6699ff 100%);
+}
+
+
+/*<<<<<<<<<<<START HEADER>>>>>>>>>>>*/
+
+.hdc {
+	border-bottom: 4px solid white;
+	margin: 20px 0 20px;
+}
+
+.logo img {
+	max-width: 100px;
+}
+
+.hdc-text {
+	text-transform: uppercase;
+	color: white;
+}
+
+@media (max-width: 49em) {
+	.hdc-textt,
+	.logo {
+		text-align: center;
+	}
+	.hdc-text h1 {
+		font-size: 3em;
+		font-weight: 100;
+		margin-bottom: 0;
+	}
+	.header-text h3 {
+		font-weight: 400;
+		margin-top: 0.5em;
+	}
+}
+
+@media (min-width: 49em) {
+	.hdc-text {
+		text-align: right;
+	}
+	.logo {
+		text-align: left;
+	}
+	.hdc-text h1 {
+		font-size: 3em;
+		font-weight: 100;
+		margin-bottom: 0;
+	}
+	.hdc-text h3 {
+		font-weight: 400;
+		margin-top: 0.5em;
+	}
+}
+
+
+/*<<<<<<<<<<<END HEADER>>>>>>>>>>>*/
+
+
+/*<<<<<<<<<<<START CIRCLE>>>>>>>>>>>*/
+
+.typewrite {
+	font-size: 32px;
+}
+
+.dc-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.dc-grid:after,
+.dc-item:before {
+	content: '';
+	display: table;
+}
+
+.dc-grid:after {
+	clear: both;
+}
+
+.dc-grid li {
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	margin: 20px;
+}
+
+@media (max-width:767px) {
+	.circle {
+		margin-left: -47px;
+	}
+}
+
+.circle {
+	padding: 100px;
+}
+
+.cicle-title {
+	margin-top: 50px;
+	color: white;
+	margin-left: 28px;
+}
+
+.dc-item {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	cursor: default;
+}
+
+.dc-info-wrap,
+.dc-info {
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+
+.dc-info-wrap {
+	top: 20px;
+	left: 20px;
+	box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(115, 114, 23, 0.8);
+}
+
+.dc-info {
+	transform-style: preserve-3d;
+}
+
+.dc-info>div {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-position: center center;
+	transition: all 0.6s ease-in-out;
+}
+
+.dc-info .dc-info-front {
+	transform-origin: 50% 100%;
+	z-index: 100;
+	box-shadow: inset 2px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dc-info .dc-info-back {
+	background: rgba(230, 132, 107, 0);
+}
+
+.dc-img-1 {
+	background-image: url(../images/img/u.png);
+}
+
+.dc-img-2 {
+	background-image: url(../images/img/Gh.png);
+}
+
+.dc-img-3 {
+	background-image: url(../images/img/atandt.jpg);
+}
+
+.dc-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin: 0 25px;
+	padding: 40px 0 0 0;
+	height: 90px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dc-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.dc-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255, 255, 255, 0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.dc-item:hover .dc-info-front {
+	transform: rotate3d(1, 0, 0, -180deg);
+	box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2), inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.dc-item:hover .dc-info-back {
+	background: rgba(230, 132, 107, 0.6);
+}
+
+
+/*<<<<<<<<<<<END CIRCLE>>>>>>>>>>>*/
+
+
+/*<<<<<<<<<<<END FOOTER>>>>>>>>>>>*/
+
+#footer {
+	padding: 50px 0;
+	position: relative;
+	color: #fff;
+}
+
+#footer .gotop {
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left: -40px;
+	z-index: 8;
+	width: 80px;
+	height: 80px;
+	font-size: 30px;
+	padding-top: 5px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 50%;
+	transition: .2s
+}
+
+#logo-dc-footer {
+	height: 50px;
+	width: 50px;
+	margin: -65px -83px -83px -70px;
+	margin-top: -77px;
+}
+
+.social {
+	position: relative
+}
+
+.social,
+.social li {
+	padding: 0;
+	margin: 0;
+	display: inline-block
+}
+
+.social li a.social-box,
+.social li a.social-circle {
+	color: #fff
+}
+
+
+}
+.social {
+	width: 100%
+}
+.social li {
+	list-style: none
+}
+.social li a {
+	font-size: 16px;
+	display: table;
+	width: 40px;
+	height: 40px;
+	margin: 0 4px
+}
+.social li a i {
+	display: table-cell;
+	vertical-align: middle
+}
+.social.social-box a,
+.social.social-circle a {
+	color: #fff
+}
+
+/*<<<<<<<<<<<END FOOTER>>>>>>>>>>>*/
+
